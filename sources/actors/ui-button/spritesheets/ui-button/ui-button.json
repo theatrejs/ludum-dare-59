@@ -1,0 +1,97 @@
+{ "frames": [
+   {
+    "filename": "frame-001@ui-button.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   },
+   {
+    "filename": "frame-002@ui-button.aseprite",
+    "frame": { "x": 128, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   },
+   {
+    "filename": "frame-003@ui-button.aseprite",
+    "frame": { "x": 256, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   },
+   {
+    "filename": "frame-004@ui-button.aseprite",
+    "frame": { "x": 0, "y": 32, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   },
+   {
+    "filename": "frame-005@ui-button.aseprite",
+    "frame": { "x": 128, "y": 32, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   },
+   {
+    "filename": "frame-006@ui-button.aseprite",
+    "frame": { "x": 256, "y": 32, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   },
+   {
+    "filename": "frame-007@ui-button.aseprite",
+    "frame": { "x": 0, "y": 64, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   },
+   {
+    "filename": "frame-008@ui-button.aseprite",
+    "frame": { "x": 128, "y": 64, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   },
+   {
+    "filename": "frame-009@ui-button.aseprite",
+    "frame": { "x": 128, "y": 32, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 50
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.16.1-x64",
+  "image": "ui-button.png",
+  "format": "RGBA8888",
+  "size": { "w": 384, "h": 96 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "idle", "from": 0, "to": 0, "direction": "forward", "color": "#000000ff" },
+   { "name": "select", "from": 1, "to": 4, "direction": "forward", "color": "#000000ff" },
+   { "name": "activate", "from": 5, "to": 8, "direction": "forward", "color": "#000000ff" }
+  ]
+ }
+}
