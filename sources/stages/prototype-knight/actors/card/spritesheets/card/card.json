@@ -1,0 +1,62 @@
+{ "frames": [
+   {
+    "filename": "frame-001@card.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 64, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 192 },
+    "sourceSize": { "w": 64, "h": 192 },
+    "duration": 100
+   },
+   {
+    "filename": "frame-002@card.aseprite",
+    "frame": { "x": 64, "y": 0, "w": 64, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 192 },
+    "sourceSize": { "w": 64, "h": 192 },
+    "duration": 100
+   },
+   {
+    "filename": "frame-003@card.aseprite",
+    "frame": { "x": 128, "y": 0, "w": 64, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 192 },
+    "sourceSize": { "w": 64, "h": 192 },
+    "duration": 100
+   },
+   {
+    "filename": "frame-004@card.aseprite",
+    "frame": { "x": 0, "y": 192, "w": 64, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 192 },
+    "sourceSize": { "w": 64, "h": 192 },
+    "duration": 100
+   },
+   {
+    "filename": "frame-005@card.aseprite",
+    "frame": { "x": 64, "y": 192, "w": 64, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 192 },
+    "sourceSize": { "w": 64, "h": 192 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.16.1-x64",
+  "image": "card.png",
+  "format": "RGBA8888",
+  "size": { "w": 192, "h": 384 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "knight-down-left-left", "from": 0, "to": 0, "direction": "forward", "color": "#000000ff" },
+   { "name": "knight-down-right-right", "from": 1, "to": 1, "direction": "forward", "color": "#000000ff" },
+   { "name": "knight-up-up-left", "from": 2, "to": 2, "direction": "forward", "color": "#000000ff" },
+   { "name": "knight-up-up-right", "from": 3, "to": 3, "direction": "forward", "color": "#000000ff" }
+  ]
+ }
+}

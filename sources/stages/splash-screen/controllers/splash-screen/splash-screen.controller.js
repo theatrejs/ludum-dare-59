@@ -71,7 +71,7 @@ class ControllerSplashScreen extends FACTORIES.ActorWithPreloadables([
         });
 
         const $DEBOUNCE_ACTIVATION = 400;
-        const $DEBOUNCE_STAGE = 2000;
+        const $DEBOUNCE_STAGE = 1000;
         const $DEBOUNCE_TRANSITION = 800;
 
         this.$machine = new FiniteStateMachine([
@@ -111,6 +111,7 @@ class ControllerSplashScreen extends FACTORIES.ActorWithPreloadables([
 
                     this.$actorUiButtonStart = this.stage.createActor(ActorUiButtonStart)
                     .setComponent('target')
+                    .translateY(- 96)
                     .setZIndex(getZIndexInterface())
                     .mimic(this);
 

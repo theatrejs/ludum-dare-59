@@ -74,7 +74,7 @@ class ControllerCredits extends FACTORIES.ActorWithPreloadables([
         });
 
         const $DEBOUNCE_ACTIVATION = 400;
-        const $DEBOUNCE_STAGE = 2000;
+        const $DEBOUNCE_STAGE = 1000;
         const $DEBOUNCE_TRANSITION = 800;
 
         this.$machine = new FiniteStateMachine([
@@ -115,6 +115,7 @@ class ControllerCredits extends FACTORIES.ActorWithPreloadables([
                     this.$actorUiButtonLudumDare = this.stage.createActor(ActorUiButtonLudumDare)
                     .setComponent('target')
                     .setZIndex(getZIndexInterface())
+                    .translateY(- 96)
                     .mimic(this);
 
                     this.$actorUiButtonLudumDare.triggerAction(ACTIONS_UI_BUTTON_LUDUM_DARE.SELECT);

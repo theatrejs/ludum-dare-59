@@ -8,7 +8,7 @@ import * as ACTIONS from './cameraman.actions.js';
  * @constant
  * @private
  */
-const $AMPLITUDE_SHAKE = 4;
+const $AMPLITUDE_SHAKE = 6;
 
 /**
  * The shake duration.
@@ -16,7 +16,7 @@ const $AMPLITUDE_SHAKE = 4;
  * @constant
  * @private
  */
-const $DURATION_SHAKE = 200;
+const $DURATION_SHAKE = 400;
 
 /**
  * The travelling duration.
@@ -24,7 +24,7 @@ const $DURATION_SHAKE = 200;
  * @constant
  * @private
  */
-const $DURATION_TRAVELLING = 1600;
+const $DURATION_TRAVELLING = 800;
 
 /**
  * @extends {Actor<(ACTIONS.DISABLE_TRAVELLING | ACTIONS.ENABLE_TRAVELLING | ACTIONS.SHAKE), undefined>}

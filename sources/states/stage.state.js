@@ -1,6 +1,12 @@
 import {Stage, State} from '@theatrejs/theatrejs';
 
-import StagePrototype from 'stages/prototype/prototype.stage.js';
+// import StagePrototype from 'stages/prototype/prototype.stage.js';
+// import StagePrototype from 'stages/prototype-boss/prototype.stage.js';
+// import StagePrototype from 'stages/prototype-cards/prototype.stage.js';
+import StagePrototype from 'stages/prototype-knight/prototype.stage.js';
+// import StagePrototype from 'stages/prototype-isometric/prototype.stage.js';
+// import StagePrototype from 'stages/prototype-runner/prototype.stage.js';
+// import StagePrototype from 'stages/prototype-runner-isometric/prototype.stage.js';
 
 /**
  * The state manager of the stage.
