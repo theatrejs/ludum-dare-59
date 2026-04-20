@@ -15,7 +15,6 @@
         "dotenv": "16.4.5",
         "electron": "28.2.2",
         "electron-packager": "17.1.2",
-        "file-loader": "6.2.0",
         "webpack": "5.94.0",
         "webpack-cli": "4.10.0",
         "webpack-dev-server": "4.8.0",

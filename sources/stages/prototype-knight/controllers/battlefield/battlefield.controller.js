@@ -130,7 +130,7 @@ class ControllerPrototype extends FACTORIES.ActorWithPreloadables([
 
             getEventBus().trigger(EVENTS.STATE_BOARD_ENDED);
 
-            UTILS.sleep(1000).then(() => {
+            UTILS.sleep(2000).then(() => {
 
                 this.engine.createStage(StagePrototype);
             });
@@ -171,7 +171,7 @@ class ControllerPrototype extends FACTORIES.ActorWithPreloadables([
 
             getEventBus().trigger(EVENTS.STATE_BOARD_ENDED);
 
-            UTILS.sleep(1000).then(() => {
+            UTILS.sleep(2000).then(() => {
 
                 console.log('---------------------');
 
@@ -221,7 +221,7 @@ class ControllerPrototype extends FACTORIES.ActorWithPreloadables([
 
             getEventBus().trigger(EVENTS.STATE_BOARD_ENDED);
 
-            UTILS.sleep(1000).then(() => {
+            UTILS.sleep(2000).then(() => {
 
                 this.engine.createStage(StagePrototype);
             });
@@ -258,7 +258,7 @@ class ControllerPrototype extends FACTORIES.ActorWithPreloadables([
 
             getEventBus().trigger(EVENTS.STATE_BOARD_ENDED);
 
-            UTILS.sleep(1000).then(() => {
+            UTILS.sleep(2000).then(() => {
 
                 this.engine.createStage(StagePrototype);
             });

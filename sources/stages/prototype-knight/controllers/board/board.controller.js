@@ -341,7 +341,7 @@ class ControllerBoard extends FACTORIES.ActorWithPreloadables([
 
             $audio: soundAmbiant,
             $loop: true,
-            $volume: 0.125/4
+            $volume: 0.25
         }));
 
         this.$stateEnded = false;

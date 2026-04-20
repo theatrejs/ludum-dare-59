@@ -6,7 +6,7 @@ import * as STATES from './grid.states.js';
 
 import * as ANIMATIONS from './spritesheets/grid/grid.animations.js';
 import asepriteGrid from './spritesheets/grid/grid.aseprite';
-import soundIdle from './sounds/idle/idle.rpp';
+// import soundIdle from './sounds/idle/idle.rpp';
 
 /**
  * @typedef {import('./grid.actions.js').TypeAction} TypeAction An action.
@@ -24,7 +24,7 @@ import soundIdle from './sounds/idle/idle.rpp';
 class ActorGrid extends FACTORIES.ActorWithPreloadables([
 
     PLUGIN_ASEPRITE.FACTORIES.PreloadableAseprite(asepriteGrid),
-    FACTORIES.PreloadableSound(soundIdle)
+    // FACTORIES.PreloadableSound(soundIdle)
 ]) {
 
     /**

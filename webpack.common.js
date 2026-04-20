@@ -21,16 +21,7 @@ function configuration() {
             'rules': [
 
                 {
-                    'test': /\.m4a|\.mp3|\.wav$/,
-                    'use': [
-
-                        {
-                            'loader': 'file-loader'
-                        }
-                    ]
-                },
-                {
-                    'test': /\.jpeg|\.jpg|\.png$/,
+                    'test': /\.jpeg|\.jpg|\.m4a|\.mp3|\.png|\.wav$/,
                     'type': 'asset/resource'
                 },
                 {

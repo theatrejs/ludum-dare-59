@@ -6,7 +6,7 @@ import * as STATES from './placeholder.states.js';
 
 import * as ANIMATIONS from './spritesheets/placeholder/placeholder.animations.js';
 import asepritePlaceholder from './spritesheets/placeholder/placeholder.aseprite';
-import soundIdle from './sounds/idle/idle.rpp';
+// import soundIdle from './sounds/idle/idle.rpp';
 
 /**
  * @typedef {import('./placeholder.actions.js').TypeAction} TypeAction An action.
@@ -24,7 +24,7 @@ import soundIdle from './sounds/idle/idle.rpp';
 class ActorPlaceholder extends FACTORIES.ActorWithPreloadables([
 
     PLUGIN_ASEPRITE.FACTORIES.PreloadableAseprite(asepritePlaceholder),
-    FACTORIES.PreloadableSound(soundIdle)
+    // FACTORIES.PreloadableSound(soundIdle)
 ]) {
 
     /**

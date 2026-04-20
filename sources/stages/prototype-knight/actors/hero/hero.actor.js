@@ -52,7 +52,7 @@ class ActorHero extends FACTORIES.ActorWithPreloadables([
         this.addSound(new Sound({
 
             $audio: audioBlast,
-            $volume: 0.5
+            $volume: 2
         }));
     }
 
@@ -65,7 +65,7 @@ class ActorHero extends FACTORIES.ActorWithPreloadables([
         this.addSound(new Sound({
 
             $audio: audioMove,
-            $volume: 0.5
+            $volume: 1
         }));
     }
 

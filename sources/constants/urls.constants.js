@@ -3,7 +3,7 @@
  * @type {string}
  * @constant
  */
-const LUDUM_DARE = 'https://ldjam.com/events/ludum-dare/XX/UNNAMED';
+const LUDUM_DARE = 'https://ldj.am/$424583';
 
 export {
 

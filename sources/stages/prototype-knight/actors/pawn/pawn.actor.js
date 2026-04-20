@@ -7,8 +7,9 @@ import * as STATES from './pawn.states.js';
 import * as ANIMATIONS from './spritesheets/pawn/pawn.animations.js';
 import asepritePawn from './spritesheets/pawn/pawn.aseprite';
 import soundAttack from './sounds/attack/attack.rpp';
-import soundIdle from './sounds/idle/idle.rpp';
+// import soundIdle from './sounds/idle/idle.rpp';
 import soundDie from './sounds/die/die.rpp';
+import soundLaugh from './sounds/laugh/laugh.rpp';
 
 /**
  * @typedef {import('./pawn.actions.js').TypeAction} TypeAction An action.
@@ -26,9 +27,10 @@ import soundDie from './sounds/die/die.rpp';
 class ActorPawn extends FACTORIES.ActorWithPreloadables([
 
     PLUGIN_ASEPRITE.FACTORIES.PreloadableAseprite(asepritePawn),
-    FACTORIES.PreloadableSound(soundIdle),
+    // FACTORIES.PreloadableSound(soundIdle),
     FACTORIES.PreloadableSound(soundAttack),
-    FACTORIES.PreloadableSound(soundDie)
+    FACTORIES.PreloadableSound(soundDie),
+    FACTORIES.PreloadableSound(soundLaugh),
 ]) {
 
     /**
@@ -54,7 +56,13 @@ class ActorPawn extends FACTORIES.ActorWithPreloadables([
         this.addSound(new Sound({
 
             $audio: soundAttack,
-            $volume: 0.5
+            $volume: 1
+        }));
+
+        this.addSound(new Sound({
+
+            $audio: soundLaugh,
+            $volume: 2
         }));
     }
 
@@ -69,7 +77,7 @@ class ActorPawn extends FACTORIES.ActorWithPreloadables([
         this.addSound(new Sound({
 
             $audio: soundDie,
-            $volume: 0.5
+            $volume: 1
         }));
     }
 

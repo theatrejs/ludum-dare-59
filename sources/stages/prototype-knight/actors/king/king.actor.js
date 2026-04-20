@@ -50,7 +50,7 @@ class ActorKing extends FACTORIES.ActorWithPreloadables([
      */
 
     /**
-     * @typedef {('DRAW_ARROW' | 'FIRE')} TypeStateMachine A finite state machine state.
+     * @typedef {('DRAW_ARROW' | 'FIRE' | 'WAITING')} TypeStateMachine A finite state machine state.
      */
 
     /**
@@ -59,6 +59,13 @@ class ActorKing extends FACTORIES.ActorWithPreloadables([
      * @private
      */
     $machine;
+
+    /**
+     * TODOOOOOOOOOOOOOOOOOOOOOO.
+     * @type {boolean}
+     * @private
+     */
+    $ready;
 
     /**
      * TODOOOOOOOOOOOOOOOOOOOOOO.
@@ -84,7 +91,7 @@ class ActorKing extends FACTORIES.ActorWithPreloadables([
         this.addSound(new Sound({
 
             $audio: soundIdle,
-            $volume: 1
+            $volume: 2
         }));
     }
 
@@ -92,6 +99,8 @@ class ActorKing extends FACTORIES.ActorWithPreloadables([
      * Triggers the 'follow hero' action.
      */
     $actionFollowHero() {
+
+        this.$ready = true;
 
         setGridKing(getGridKing().add(new Vector2(getGridHero().x, 0)));
 
@@ -130,6 +139,8 @@ class ActorKing extends FACTORIES.ActorWithPreloadables([
      */
     onCreate() {
 
+        this.$ready = false;
+
         this.listenAction(ACTIONS.IDLE, this.$actionIdle.bind(this));
         this.listenAction(ACTIONS.START, this.$actionStart.bind(this));
 
@@ -141,6 +152,16 @@ class ActorKing extends FACTORIES.ActorWithPreloadables([
 
         this.$machine = new FiniteStateMachine([
 
+            {
+                $state: 'WAITING',
+                $transitions: [
+
+                    {
+                        $condition: () => (this.$ready === true),
+                        $state: 'DRAW_ARROW'
+                    }
+                ]
+            },
             {
                 $state: 'DRAW_ARROW',
                 $onLeave: () => {
@@ -175,7 +196,7 @@ class ActorKing extends FACTORIES.ActorWithPreloadables([
 
                     getEventBus().trigger(EVENTS.STATE_BOARD_ENDED);
 
-                    UTILS.sleep(1000).then(() => {
+                    UTILS.sleep(2000).then(() => {
 
                         this.engine.createStage(StagePrototype);
                     });
@@ -190,7 +211,7 @@ class ActorKing extends FACTORIES.ActorWithPreloadables([
             }
         ]);
 
-        this.$machine.initiate('DRAW_ARROW');
+        this.$machine.initiate('WAITING');
     }
 
     /**
